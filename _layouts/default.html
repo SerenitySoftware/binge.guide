@@ -1,20 +1,17 @@
+---
+layout: compress
+---
 <!DOCTYPE html>
-<html>
+<html lang="{% if page.language %}{{ page.language | downcase }}{% else %}{{ site.language | downcase }}{% endif %}">
+{% include head.html %}
 
-  {% include head.html %}
-
-  <body>
-
-    {% include header.html %}
-
-    <div class="page-content">
-      <div class="wrapper">
+<body class="home-template">
+    <div class="site-wrapper">
+        {% include header.html %}
         {{ content }}
-      </div>
+        {% include footer.html %}
     </div>
+</body>
 
-    {% include footer.html %}
-
-  </body>
-
+{% include global.html %}
 </html>
