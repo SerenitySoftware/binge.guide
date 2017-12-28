@@ -15,6 +15,9 @@ with open('shows.csv') as shows_data:
         title = show[1]
         pilot = show[4]
 
+        if slug == "Slug":
+            continue
+
         output = template.render(slug=slug, title=title, pilot=pilot)
         with open("../content/{0}.md".format(slug), "w") as content:
             content.write(output)
