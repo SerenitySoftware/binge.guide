@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div id="main">
+        {% for article in articles %}
+        <article>
+            <a href="{{article.url}}" class="image">
+                <img src="/theme/images/shows/{{article.slug}}.png" alt="{{article.title}}" />
+                <h2>{{article.title}}</h2>
+            </a>
+        </article>
+        {% endfor %}
+    </div>
+{% endblock %}

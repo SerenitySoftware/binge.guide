@@ -1,0 +1,8 @@
+Title: A Handmaid's Tale
+Date:  00:00
+Modified:  00:00
+Category: drama
+Tags: netflix
+Slug: a-handmaids-tale
+
+This is the content for A Handmaid's Tale
