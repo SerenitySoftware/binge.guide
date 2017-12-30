@@ -19,7 +19,7 @@ with open('shows.csv') as shows_data:
             continue
 
         output = template.render(slug=slug, title=title, pilot=pilot)
-        with open("../content/{0}.md".format(slug), "w") as content:
+        with open("../drafts/{0}.md".format(slug), "w") as content:
             content.write(output)
 
         copyfile("./template.png", "../theme/binge/static/images/shows/{0}.png".format(slug))
