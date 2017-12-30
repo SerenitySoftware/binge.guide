@@ -1,11 +1,13 @@
-<html lang="{{ DEFAULT_LANG }}">
-<html>
+<!DOCTYPE html>
+<html lang="{{ DEFAULT_LANG }}" class="has-navbar-fixed-top">
 <head>
     <title>{% block title %}{{ SITENAME }}{% endblock title %}</title>
     <meta charset="utf-8" />
     {% block metatags %}{% endblock %}
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,400italic" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.1/css/bulma.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <link rel="stylesheet" href="/theme/css/main.css" />
     {% block head %}
         {% if FEED_ALL_ATOM %}
@@ -36,22 +38,31 @@
 </head>
 <body>
 
-<!-- Wrapper -->
-<div id="wrapper">
+    <nav class="navbar is-transparent is-dark is-fixed-top" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="/">
+                <h1>Binge.Guide</h1>
+            </a>
 
-    <!-- Header -->
-    <header id="header">
-        <h1><a href="/">Binge.Guide</a></h1>
-        <nav>
-            <ul>
-                <li><a href="#footer" class="icon fa-info-circle">About</a></li>
-            </ul>
-        </nav>
-    </header>
+            <button class="button navbar-burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
 
-    {% block content %}
-    {% endblock content %}
-</div>
+        <div class="navbar-menu">
+            <div class="navbar-start"></div>
+            <div class="navbar-end">
+                <a class="navbar-item" href="/about/">About</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="section content">
+        {% block content %}
+        {% endblock content %}
+    </section>
 
 </body>
 </html>
