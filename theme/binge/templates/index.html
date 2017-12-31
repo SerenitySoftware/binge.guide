@@ -1,15 +1,16 @@
 {% extends "base.html" %}
 
 {% block content %}
-    <div id="main" class="tile is-ancestor">
+    <div id="main" class="columns is-desktop is-centered is-gapless">
         {% for article in articles_page.object_list %}
-        <article class="tile is-4">
-            <div class="content">
-                <a href="/{{article.url}}" class="image">
-                    <img src="/theme/images/shows/thumbnails/{{article.slug}}.png" alt="{{article.title}}" />
-                    <h2>{{article.title}} - {{article.bingeworthy}}</h2>
-                </a>
-            </div>
+        <article class="column is-full-mobile is-half-tablet is-one-third-desktop is-one-quarter-widescreen is-one-fifth-fullhd">
+            <a href="/{{article.url}}" class="image">
+                <img src="/theme/images/shows/thumbnails/{{article.slug}}.png" alt="{{article.title}}" />
+                <h2>{{article.title}}</h2>
+                <div class="badge">
+                    <span class="rating">{{article.bingeworthy}}%</span>
+                </div>
+            </a>
         </article>
         {% endfor %}
     </div>

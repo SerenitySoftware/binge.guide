@@ -36,21 +36,43 @@ body {
 	display: block;
 }
 
+#main article h2,
+#main article .badge {
+    -moz-pointer-events: none;
+    -webkit-pointer-events: none;
+    -ms-pointer-events: none;
+    pointer-events: none;
+    bottom: .3em;
+    text-shadow: 0 0 5px #000000;
+    font-size: 1.2em;
+    font-weight: bold;
+    line-height: 1;
+    position: absolute;
+    z-index: 1;
+}
+
 #main article h2 {
-	-moz-pointer-events: none;
-	-webkit-pointer-events: none;
-	-ms-pointer-events: none;
-	pointer-events: none;
-	bottom: .2em;
 	color: #DDDDDD;
-	text-shadow: 0 0 5px #000000;
-	font-size: 1.2em;
-	font-weight: bold;
 	left: .5em;
-	margin: 0;
-	padding: 0;
-	position: absolute;
-	z-index: 1;
+    margin: 0;
+    padding: 0;
+}
+
+#main article .badge {
+    right: .5em;
+}
+
+#main article .badge .rating {
+    color: #FFFFFF;
+    text-align: right;
+    display: block;
+}
+
+#main article .badge h5 {
+    font-size: .7em;
+    display: block;
+    margin: 0;
+    padding: 0;
 }
 
 /* Footer */
