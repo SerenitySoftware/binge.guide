@@ -36,23 +36,33 @@ body {
 	display: block;
 }
 
+#main article .banner {
+    background: rgba(0, 0, 0, 0.35);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2em;
+}
+
 #main article h2,
 #main article .badge {
     -moz-pointer-events: none;
     -webkit-pointer-events: none;
     -ms-pointer-events: none;
     pointer-events: none;
-    bottom: .3em;
     text-shadow: 0 0 5px #000000;
     font-size: 1.2em;
     font-weight: bold;
     line-height: 1;
     position: absolute;
+    bottom: .35em;
     z-index: 1;
 }
 
 #main article h2 {
-	color: #DDDDDD;
+    font-weight: normal;
+	color: #FFFFFF;
 	left: .5em;
     margin: 0;
     padding: 0;
