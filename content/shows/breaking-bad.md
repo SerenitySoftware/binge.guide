@@ -3,7 +3,12 @@ Date: 2008-01-20 00:00
 Modified: 2008-01-20 00:00
 Producer: AMC
 Tags: Drama, Comedy
-Bingeworthy: 99
+Bingeworthy: 85
+StayingPower: 15
+Availability: 15
+Popularity: 10
+CriticalPraise: 19
+PopularPraise: 26
 Slug: breaking-bad
 AMC: breaking-bad
 Netflix: 70143836
