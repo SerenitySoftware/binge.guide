@@ -13,8 +13,12 @@ TIMEZONE = 'America/New_York'
 
 DEFAULT_LANG = u'en'
 
-ARTICLE_URL = '{slug}/'
+ARTICLE_URL = '/{slug}/'
 ARTICLE_SAVE_AS = '{slug}/index.html'
+PAGE_URL = '/{slug}/'
+PAGE_SAVE_AS = '{slug}/index.html'
+TAG_URL = '/genre/{slug}/'
+TAG_SAVE_AS = 'genre/{slug}/index.html'
 
 def bingeworthy_sort(article):
     return 100 - int(article.metadata["bingeworthy"])

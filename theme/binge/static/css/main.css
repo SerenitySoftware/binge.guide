@@ -75,6 +75,19 @@ body {
     padding: 0;
 }
 
+#page, #page h1 {
+    color: #EEEEEE;
+}
+
+#page table {
+    color: #EEEEEE;
+    max-width: 50em;
+}
+
+#page table th {
+    color: #EEEEEE;
+}
+
 /* Footer */
 
 #footer .copyright {
