@@ -2,12 +2,12 @@
 
 {% block content %}
     <div id="main" class="tile is-ancestor">
-        {% for article in articles %}
+        {% for article in articles_page.object_list %}
         <article class="tile is-4">
             <div class="content">
                 <a href="/{{article.url}}" class="image">
-                    <img src="/theme/images/shows/{{article.slug}}.png" alt="{{article.title}}" />
-                    <h2>{{article.title}}</h2>
+                    <img src="/theme/images/shows/thumbnails/{{article.slug}}.png" alt="{{article.title}}" />
+                    <h2>{{article.title}} - {{article.bingeworthy}}</h2>
                 </a>
             </div>
         </article>

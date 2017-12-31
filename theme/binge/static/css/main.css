@@ -53,28 +53,6 @@ body {
 	z-index: 1;
 }
 
-	#main:after {
-		-moz-pointer-events: none;
-		-webkit-pointer-events: none;
-		-ms-pointer-events: none;
-		pointer-events: none;
-		-moz-transition: opacity 0.5s ease, visibility 0.5s;
-		-webkit-transition: opacity 0.5s ease, visibility 0.5s;
-		-ms-transition: opacity 0.5s ease, visibility 0.5s;
-		transition: opacity 0.5s ease, visibility 0.5s;
-		background: rgba(36, 38, 41, 0.25);
-		content: '';
-		display: block;
-		height: 100%;
-		left: 0;
-		opacity: 0;
-		position: absolute;
-		top: 0;
-		visibility: hidden;
-		width: 100%;
-		z-index: 1;
-	}
-
 /* Footer */
 
 #footer .copyright {
@@ -82,6 +60,6 @@ body {
 	font-size: 0.9em;
 }
 
-	#footer .copyright a {
-		color: inherit;
-	}
+#footer .copyright a {
+    color: inherit;
+}

@@ -16,6 +16,11 @@ DEFAULT_LANG = u'en'
 ARTICLE_URL = '{slug}/'
 ARTICLE_SAVE_AS = '{slug}/index.html'
 
+def bingeworthy_sort(article):
+    return 100 - int(article.metadata["bingeworthy"])
+
+ARTICLE_ORDER_BY = bingeworthy_sort
+
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
 CATEGORY_FEED_ATOM = None
