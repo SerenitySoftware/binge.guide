@@ -3,7 +3,7 @@
 from __future__ import unicode_literals
 
 AUTHOR = u'Bingeworthy'
-SITENAME = u'Binge Guide'
+SITENAME = u'The Binge Guide'
 SITEURL = ''
 THEME = 'theme/binge'
 

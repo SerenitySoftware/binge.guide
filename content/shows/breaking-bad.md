@@ -1,5 +1,6 @@
 Slug: breaking-bad
 Title: Breaking Bad
+Description: Walter White just found out he has lung cancer, and it looks bad. What's a loyal and devoted husband and father to do? Meth, of course.
 Date: 2008-01-20 00:00
 Modified: 2008-01-20 00:00
 Producer: AMC

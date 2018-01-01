@@ -1,13 +1,14 @@
 {% extends "base.html" %}
+
+{% block title %}{{article.title}} - {{SITENAME}}{% endblock %}
 {% block metatags %}
   {% if article.description %}
-    <meta name="description" content="{{article.description}}" />
+    <meta name="description" content="{{article.title}}: {{article.description}}" />
   {% endif %}
 
-  {% for tag in article.tags %}
-    <meta name="tags" content="{{tag}}" />
-  {% endfor %}
-
+  {% if article.tags %}
+    <meta name="keywords" content="{{SITENAME}} - {% for tag in article.tags %}{{tag}} {% endfor %}" />
+  {% endif %}
 {% endblock %}
 
 {% block content %}
