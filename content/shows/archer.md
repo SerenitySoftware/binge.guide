@@ -20,4 +20,28 @@ Microsoft: https://www.microsoft.com/en-us/store/tv/breaking-bad/8d6kgwzl66zr
 
 
 
-This is the content for Archer
+Synopsis
+==
+
+Looking for an irreverent show about dysfunctional secret agents with no boundaries? Well have we got a show for you!
+
+Archer and the rest of no-relation-to-real-life-terrorist-group ISIS bumble their way through every activity, yet still manage to come out alive and, more importantly, create inside jokes.
+
+Review
+==
+
+Archer is an incredibly stupid show. The characters are irredeemable, the plot daringly asinine, the humor low-brow, and the animators occasionally take cues from Space Ghost and reuse the same animations when they don't feel like drawing anything new.
+
+However, it's also oddly endearing, endlessly quotable, and perfectly subject to memes. 
+
+The pilot and first few episodes are entertaining, but the episodes are so short that you really need until closer to the end of the first season to get it.
+
+Archer is a cult comedy. The show only hit its stride a few seasons in, and after it was released on streaming providers. It's also dirty enough to have mainstream audiences clutching their pearls. If you aren't easily offended and enjoy a bit of good dumb fun, Archer may be your perfect show.
+
+
+Bingeworthiness
+==
+
+Archer episodes are short at around 20 minutes each, and although the plot is hair-thin and mostly revolves around Archer himself acting a fool, you'll find yourself continuing unfettered until Netflix condescendingly asks you if you're *still* watching.
+
+It's also against everything we stand for here, but you could also easily watch a single episode over a short lunch. The episodes are enjoyable independently and you can pick it up at any point.
