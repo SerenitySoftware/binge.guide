@@ -30,7 +30,6 @@ Firefly is simultaneously a slow burn and action packed. Characters are fully fl
 
 
 Bingeworthiness
-
 ==
 
 Firefly's an easy watch. Because of its direction and conversational yet visual appeal, you'll be able to watch a bunch of episodes in a row. You could even watch the entire series plus the movie on a single long Saturday. Will your eyes be scratchy and your mouth dry by the end of the binge marathon? Of course, but you'll be richly rewarded by having watched the best show ever.
