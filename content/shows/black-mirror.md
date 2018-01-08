@@ -21,24 +21,24 @@ Microsoft: https://www.microsoft.com/en-us/store/tv/breaking-bad/8d6kgwzl66zr
 Synopsis
 ==
 
-Walter White just found out he has lung cancer, and it looks bad. What's a loyal and devoted husband and father to do? The answer, as always, is to use his decades of training as a chemist and teacher to make methamphetamines and create the largest drug empire the US southwestern states have ever seen. Hijinx ensue!
+This anthology takes the best parts about humanity and technology and gives them a dark twist. You'll start every episode thinking about how amazing a particular technology would be, and you'll finish each episode in a fetal position on your living room floor, questioning every decision you've ever made.
+
 
 Review
 ==
 
-Breaking Bad can take some time to grow on you, but when it does, you'll consider it a national treasure. The first season is a bit of a rocky start while the characters find their voice and the writers learn what environment they're going to set up. Stick with it and by the time you reach the second season, you'll be invested.
+First of all, Black Mirror has a bit of an initial hurdle for viewers. Consider it a gauntlet. If you can make it through the first episode, you can make it through any of the rest of them, provided you scrub yourself thoroughly with bleach and an abrasive cleaner to get that dirty feeling off.
 
-It's at once gritty and smooth, with amazing sets and the naturally stark landscapes of suburban New Mexico contrasted with the criminal underground that Walt finds himself balancing.
+I love technology at least as much as Kip Dynamite, but some episodes leave me feeling like moving to the wilderness and living off the land. Apparently the writers lock themselves together for a few weeks, pick a bunch of technologies, and then have a competition to see who can come up with an answer to "what's the worst that could happen?" Certain themes come up with frequency, such as ubiquitous surveillance, social media clout, and humanity's obsession with convenience. Black Mirror will make you feel terrible about all of those things.
 
-Make no mistake, Breaking Bad is about its characters and their development, so if you come away from it with a moral epiphany, you might be reading too much into it.
+Now of course, it's intended to make you think, and think you will. Among other things, you'll discover a newfound hatred of pigs, an intense dislike of robots, and you'll end up signing off of Facebook for life. It's this thoughtfulness that's required that hooks you on the show. It's a worthy investment of time and energy, and the thinking can be good for your soul. Maybe you'll even become a better person for watching Black Mirror.
 
-In the same vein that you find yourself somehow rooting for Dexter, a serial killer, you'll find yourself rooting for Walt as he wraps his meek and weak personality with a layer of violence and willpower, destroying nearly everything he's held dear in the process.
+Be sure to let me know when you find a good deal on a yurt and land in the Pacific Northwest; the rest of us who watched the show already can point you to the best place for privacy so you can be a neo-Luddite too.
+
 
 Bingeworthiness
 ==
 
-Breaking Bad doesn't hook you with its plot. It's bingeworthy because it's amazingly well-written and masterfully filmed. Each scene moves the show forward, most episodes are tragic, and the characters are simultaneously heartbreaking and kickass, each in their own ways.
+This is tricky. On the one hand, the show is perfectly set up by Netflix to binge watch. Unfortunately, you probably will need a break between episodes to digest and reconsider your life. I've never been able to handle more than two episodes in a night personally, and one was the fluffiest episode in the whole series.
 
-Watch for the cinematographers to play with lighting and color. Watch Walt and Jesse evolve their facades yet still be the same awkward and scared men. Watch the beautiful and complex interactions among the different personalities. Watch as Walt and Jesse dissolve a man in a barrel.
-
-Breaking Bad is easy to find on a variety of streaming subscriptions. Enjoy!
+You won't be on high alert or feel adrenaline like you would with a suspense or horror movie or show, but you may not like the way you feel for a while. But eventually you'll forget and you'll click play on the next episode, and the journey will continue. It will be worth it.
