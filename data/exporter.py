@@ -3,12 +3,13 @@
 import csv
 import jinja2
 from shutil import copyfile
-
+import glob
 
 with open('shows.csv') as shows_data:
     shows = csv.reader(shows_data)
     env = jinja2.Environment(loader=jinja2.FileSystemLoader("."))
     template = env.get_template('template.md')
+    drafts = glob.iglob('../drafts/*.md')
 
     for show in shows:
         slug = show[1]
@@ -30,17 +31,41 @@ with open('shows.csv') as shows_data:
         NetflixURL = show[17]
         HuluURL = show[18]
         AmazonURL = show[19]
-        iTunesURL = show [20]
+        iTunesURL = show[20]
         VuduURL = show[21]
         HBOURL = show[22]
         GoogleplayURL = show[23]
-        
 
         if slug == "Slug":
             continue
 
-        output = template.render(slug=slug, title=title, pilot=pilot, webaddresss=webaddress, producer=producer, creator=creator, finale=finale, seasons=seasons, episodes=episodes, hours=hours, IMDBrating=IMDBrating, IMDBratingcount=IMDBratingcount, Amazonrating=Amazonrating, iTunesrating=iTunesrating, Metacriticaverage=Metacriticaverage, Listofproviders=Listofproviders, NetflixURL=NetflixURL, HuluURL=HuluURL, AmazonURL=AmazonURL, iTunesURL=iTunesURL, VuduURL=VuduURL, HBOURL=HBOURL, GoogleplayURL=GoogleplayURL)
+        output = template.render(slug=slug, title=title, pilot=pilot,
+                                 webaddresss=webaddress, producer=producer,
+                                 creator=creator, finale=finale,
+                                 seasons=seasons, episodes=episodes,
+                                 hours=hours, IMDBrating=IMDBrating,
+                                 IMDBratingcount=IMDBratingcount,
+                                 Amazonrating=Amazonrating,
+                                 iTunesrating=iTunesrating,
+                                 Metacriticaverage=Metacriticaverage,
+                                 Listofproviders=Listofproviders,
+                                 NetflixURL=NetflixURL, HuluURL=HuluURL,
+                                 AmazonURL=AmazonURL, iTunesURL=iTunesURL,
+                                 VuduURL=VuduURL, HBOURL=HBOURL,
+                                 GoogleplayURL=GoogleplayURL)
+
+        print(slug)
+        for draft in drafts:
+            with open(draft, 'r') as existing:
+                draftcon = existing.read()
+                if (slug) in draftcon:
+                    print("yes")
+                else:
+                    print("no")
+'''
         with open("../drafts/{0}.md".format(slug), "w") as content:
             content.write(output)
 
-        copyfile("./template.png", "../theme/binge/static/images/shows/{0}.png".format(slug))
+        copyfile("./template.png",
+                 "../theme/binge/static/images/shows/{0}.png".format(slug))
+'''
