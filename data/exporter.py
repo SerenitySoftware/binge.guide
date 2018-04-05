@@ -9,7 +9,7 @@ with open('shows.csv') as shows_data:
     shows = csv.reader(shows_data)
     env = jinja2.Environment(loader=jinja2.FileSystemLoader("."))
     template = env.get_template('template.md')
-    drafts = glob.iglob('../drafts/*.md')
+    drafts = glob.glob('../drafts/*.md')
 
     for show in shows:
         slug = show[1]
@@ -54,18 +54,20 @@ with open('shows.csv') as shows_data:
                                  VuduURL=VuduURL, HBOURL=HBOURL,
                                  GoogleplayURL=GoogleplayURL)
 
-        print(slug)
         for draft in drafts:
-            with open(draft, 'r') as existing:
-                draftcon = existing.read()
-                if (slug) in draftcon:
-                    print("yes")
-                else:
-                    print("no")
-'''
+            if (slug) in draft:
+                with open(draft, 'r+') as existing:
+                    draftcon = existing.read()
+                    if draftcon == output:
+                        continue
+                    else:
+                        existing.write(output)
+
+            else:
+                continue
+
         with open("../drafts/{0}.md".format(slug), "w") as content:
             content.write(output)
 
         copyfile("./template.png",
                  "../theme/binge/static/images/shows/{0}.png".format(slug))
-'''
