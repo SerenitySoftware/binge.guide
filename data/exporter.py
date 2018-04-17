@@ -5,11 +5,13 @@ import jinja2
 from shutil import copyfile
 import glob
 
+drafts = glob.glob('../drafts/*.md')
+reviews = glob.glob('../content/shows/*.md')
+
 with open('shows.csv') as shows_data:
     shows = csv.reader(shows_data)
     env = jinja2.Environment(loader=jinja2.FileSystemLoader("."))
     template = env.get_template('template.md')
-    drafts = glob.glob('../drafts/*.md')
 
     for show in shows:
         slug = show[1]
@@ -54,20 +56,49 @@ with open('shows.csv') as shows_data:
                                  VuduURL=VuduURL, HBOURL=HBOURL,
                                  GoogleplayURL=GoogleplayURL)
 
-        for draft in drafts:
-            if (slug) in draft:
-                with open(draft, 'r+') as existing:
-                    draftcon = existing.read()
-                    if draftcon == output:
-                        continue
+        try:
+            with open("../drafts/{0}.md".format(slug), "x") as content:
+                content.write(output)
+                for review in reviews:
+                    if (slug) in review:
+                        with open(review, 'r') as writeup:
+                            writeuplines = []
+                            for line in writeup:
+                                if "Synopsis" in line:
+                                    writeuplines.append('\n' + '\n' + line)
+                                    for line in writeup:
+                                        writeuplines.append(line)
+                            writecon = ("".join(writeuplines))
+                            update = (output + writecon)
+                            content.write('\n' + writecon)
                     else:
-                        existing.write(output)
+                        continue
+        except Exception:
+            for draft in drafts:
+                if (slug) in draft:
+                    with open(draft, 'r+') as existing:
+                        draftcon = existing.read()
+                        for review in reviews:
+                            if slug in review:
+                                with open(review, 'r') as writeup:
+                                    writeuplines = []
+                                    for line in writeup:
+                                        if "Synopsis" in line:
+                                            writeuplines.append(
+                                                '\n' + '\n' + line)
+                                            for line in writeup:
+                                                writeuplines.append(line)
+                                    writecon = ("".join(writeuplines))
+                                    update = (output + writecon)
+                                    if writecon in draftcon:
+                                        continue
+                                    else:
+                                        existing.write(writecon)
 
-            else:
-                continue
-
-        with open("../drafts/{0}.md".format(slug), "w") as content:
-            content.write(output)
+                            else:
+                                continue
+                else:
+                    continue
 
         copyfile("./template.png",
                  "../theme/binge/static/images/shows/{0}.png".format(slug))
