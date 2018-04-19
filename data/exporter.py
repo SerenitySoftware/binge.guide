@@ -69,7 +69,6 @@ with open('shows.csv') as shows_data:
                                     for line in writeup:
                                         writeuplines.append(line)
                             writecon = ("".join(writeuplines))
-                            update = (output + writecon)
                             content.write('\n' + writecon)
                     else:
                         continue
@@ -89,7 +88,6 @@ with open('shows.csv') as shows_data:
                                             for line in writeup:
                                                 writeuplines.append(line)
                                     writecon = ("".join(writeuplines))
-                                    update = (output + writecon)
                                     if writecon in draftcon:
                                         continue
                                     else:
